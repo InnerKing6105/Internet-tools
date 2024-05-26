@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 9</title>
+  </head>
+  <body>
+    <input type="number" id="numberInput" placeholder="Enter a number" />
+    <button onclick="enter()">Enter</button>
+    <div id="output"></div>
+
+    <script>
+      function enter() {
+        let input = document.getElementById("numberInput").value;
+        // document.write(`Your Input number is ${input}`);
+        document.getElementById(
+          "output"
+        ).textContent = `Your Input number is ${input}`;
+      }
+    </script>
+  </body>
+</html>
