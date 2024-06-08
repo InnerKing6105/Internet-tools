@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umer Khan</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      main {
+        flex: 1;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .col-2,
+      .col-10 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 150px;
+      }
+
+      .col-2 {
+        flex: 1;
+        padding: 10px;
+      }
+
+      .col-10 {
+        flex: 5;
+        padding: 10px;
+      }
+
+      #calculate-button {
+        height: 40px;
+        padding: 5px 10px;
+      }
+
+      #result-screen {
+        background-color: #332703;
+        color: white;
+        padding: 10px;
+        min-height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="d-flex justify-content-between align-items-center p-3">
+      <nav>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+          class="me-3 link-primary"
+          >HTML5</a
+        >
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          class="me-3 link-primary"
+          >JavaScript</a
+        >
+        <a
+          href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+          class="link-primary"
+          >Bootstrap</a
+        >
+      </nav>
+      <div>
+        <div class="btn-group" role="group">
+          <button id="dark-mode" class="btn btn-secondary">Dark</button>
+          <button id="light-mode" class="btn btn-light">Light</button>
+        </div>
+        <button class="btn btn-info ms-2">Contact Me</button>
+      </div>
+    </header>
+    <main class="container mt-5">
+      <div class="row">
+        <div class="col-2">
+          <p>Factorial calculator.</p>
+          <p>n! = 1x2x3 ... xn</p>
+          <p>eg. 5! = 120.</p>
+        </div>
+        <div class="col-10">
+          <input
+            type="number"
+            id="number-input"
+            class="form-control"
+            style="font-size: 2rem; width: 100%"
+          />
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-2 text-end">
+          <button
+            id="calculate-button"
+            class="btn btn-primary"
+            style="height: 30px; padding: 5px 10px; font-size: 0.875rem"
+          >
+            Calculate
+          </button>
+        </div>
+        <div class="col-10">
+          <div
+            id="result-screen"
+            class="border"
+            style="
+              background-color: #332703;
+              color: white;
+              padding: 10px;
+              min-height: 100px;
+            "
+          ></div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center mt-5 footer-light">
+      <p>Simple factorial calculator @ 2024</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

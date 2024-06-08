@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+}
+#result-screen {
+  background-color: #332703;
+  color: white;
+  padding: 10px;
+  font-size: 2rem;
+  min-height: 50px;
+}
+
+.link-primary {
+  color: $primary;
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+header {
+  background-color: $header-bg;
+  color: white;
+}
+
+.link-primary {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.btn-primary {
+  background-color: $button-bg;
+  color: $button-text;
+
+  &:hover {
+    background-color: darken($button-bg, 10%);
+  }
+}
+
+.footer-light {
+  background-color: black;
+  color: white;
+}
+
+.footer-dark {
+  background-color: white;
+  color: black;
+}

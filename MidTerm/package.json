@@ -1,0 +1,17 @@
+{
+  "name": "midterm",
+  "version": "1.0.0",
+  "description": "A simple online factorial calculator.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss css/main.css"
+  },
+  "author": "Umer Khan",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "sass": "^1.32.0"
+  }
+}
