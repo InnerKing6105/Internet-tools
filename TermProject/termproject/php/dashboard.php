@@ -38,7 +38,6 @@ include '../includes/header.php';
     <h2>Welcome, <?php echo htmlspecialchars($username); ?>!</h2>
     <p>This is your fitness dashboard.</p>
 
-    <!-- Activity Logging Form -->
     <h3>Log New Activity</h3>
 <form id="activityForm">
     <div class="form-group">
